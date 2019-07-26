@@ -9,10 +9,11 @@ import characters from "./characters.json";
 class App extends React.Component {
   state = {
     score: 0,
-    high_score: 0,
+    highScore: 0,
     characters
   };
-  reset = () => {
+
+  restart = () => {
     this.state.characters.forEach((character) => (
       character.clicked = false
     ));
@@ -20,15 +21,16 @@ class App extends React.Component {
       score: 0
     });
   };
+
   handleClick = id => {
     const found = this.state.characters.find((character) => character.id === id)
     if (found.clicked === false) {
       found.clicked = true;
       this.state.characters.sort(() => Math.random() - 0.70);
-      if (this.state.score + 1 > this.state.high_score) {
+      if (this.state.score + 1 > this.state.highScore) {
         this.setState({
           score: this.state.score + 1,
-          high_score: this.state.high_score + 1
+          highScore: this.state.highScore + 1
         });
       }
       else {
@@ -39,13 +41,13 @@ class App extends React.Component {
     }
     else {
       this.state.characters.sort(() => Math.random() - 0.5);
-      this.reset();
+      this.restart();
     }
   }
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar score={this.state.score} highScore={this.state.highScore}/>
         <Hero />
         <Container>
           {this.state.characters.map((character) => (
