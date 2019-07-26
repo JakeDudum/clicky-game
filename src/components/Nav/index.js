@@ -4,9 +4,9 @@ import "./style.css";
 function Navbar() {
     return (
         <nav className="navbar">
-            <div>Clicky Game</div>
-            <div>Click an Image to Start</div>
-            <div>Score</div>
+            <div className="thirds text-center">Clicky Game</div>
+            <div className="thirds text-center">Click an Image to Start</div>
+            <div className="thirds text-center">Score</div>
         </nav>
     );
 }

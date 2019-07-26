@@ -1,0 +1,7 @@
+.hero {
+    background: #fdc355 url(https://vignette.wikia.nocookie.net/onepiece/images/5/50/Wiki-background/revision/latest?cb=20170930002910) top left repeat;
+    height: 50vh;
+    width: 100%;
+    padding: 100px;
+    text-align: center;
+}

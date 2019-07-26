@@ -1,9 +1,11 @@
 nav {
     background-color: yellow;
-    width: 100vw;
+    width: 100%;
+    position: fixed !important;
+    top: 0;
+    left: 0;
 }
 
-div {
-    text-align: center;
+.thirds {
     width: 33.3%;
 }

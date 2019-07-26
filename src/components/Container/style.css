@@ -1,0 +1,5 @@
+.container {
+    min-height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+}

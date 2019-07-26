@@ -1,0 +1,11 @@
+.footer {
+    position: relative;
+    height: 50px;
+    background-color: yellow;
+    width: 100%;
+}
+
+.footer-title {
+    position: absolute;
+    bottom: 0;
+}
