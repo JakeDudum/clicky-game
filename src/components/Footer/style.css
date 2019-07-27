@@ -3,9 +3,16 @@
     height: 50px;
     background-color: yellow;
     width: 100%;
+    font-family: onePiece;
 }
 
 .footer-title {
     position: absolute;
     bottom: 0;
+    font-size: 22px;
+}
+
+@font-face {
+    font-family: onePiece;
+    src: url(one-piece-font.ttf);
 }

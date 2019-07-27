@@ -1,11 +1,19 @@
 nav {
-    background-color: yellow;
+    background-color: #3A7BB8;
     width: 100%;
+    height: 80px;
     position: fixed !important;
     top: 0;
     left: 0;
+    font-family: onePiece;
+    font-size: 32px;
 }
 
 .thirds {
     width: 33.3%;
+}
+
+@font-face {
+    font-family: onePiece;
+    src: url(one-piece-font.ttf);
 }

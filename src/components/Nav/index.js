@@ -5,7 +5,7 @@ function Navbar(props) {
     return (
         <nav className="navbar">
             <div className="thirds text-center">Clicky Game</div>
-            <div className="thirds text-center">Click an Image to Start</div>
+            <div className="thirds text-center">{props.message}</div>
             <div className="thirds text-center">Score: {props.score} Highscore: {props.highScore}</div>
         </nav>
     );
