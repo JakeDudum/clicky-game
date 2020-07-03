@@ -4,6 +4,7 @@
 }
 
 .img-card {
+    height: 100%;
     margin: 5px 20px;
     border: 5px solid red;
 }
